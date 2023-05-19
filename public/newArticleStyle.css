@@ -1,0 +1,300 @@
+/*for laptops*/
+@media only screen and (min-width: 992px) {
+  body {
+    margin: 0px 0px;
+    font-family: helvetica;
+  }
+
+  .content-wrapper {
+    display: grid;
+    grid-template-columns: auto 700px auto;
+  }
+  header {
+    grid-column-start: 2;
+    grid-column-end: 2;
+  }
+  footer {
+    height: 50px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    background: #efeffa;
+    bottom: 0;
+    width: 100%;
+  }
+  .left-nav {
+    float: left;
+  }
+  .right-nav {
+    float: right;
+  }
+  .gapfill1 {
+    grid-column-start: 1;
+    grid-column-end: 1;
+  }
+  .gapfill2 {
+    grid-column-start: 3;
+    grid-column-end: 3;
+  }
+  .content-wrapper > h2 {
+    grid-column-start: 2;
+    grid-column-end: 2;
+    font-size: 400%;
+  }
+
+  form {
+    margin-top: 0;
+    grid-column-start: 2;
+    grid-column-end: 2;
+  }
+
+  .field {
+    margin: 2vh 0px;
+  }
+  .gapfill1,
+  .gapfill2,
+  header {
+    background-color: #efeffa;
+    padding: 20px 0px;
+  }
+
+  .tech-blog-link,
+  .tech-blog-link:visited {
+    text-decoration: none;
+    border: 1px solid #6d64ff;
+    border-radius: 30px;
+    padding: 6px 6px;
+    margin: auto;
+    background-image: linear-gradient(to right, #6d64ff, #313042, #cf1512);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+  }
+  .create-btn,
+  .create-btn:visited {
+    text-decoration: none;
+    grid-column-start: 2;
+    grid-column-end: 2;
+    text-decoration: none;
+    border: 3px solid #6d64ff;
+    border-radius: 15px;
+    padding: 15px 10px;
+    text-align: center;
+    color: white;
+    background-color: #313042;
+    margin-bottom: 2vh;
+    width: 100%;
+  }
+  .create-btn:hover {
+    box-shadow: 5px 5px #6d64ff;
+    cursor: pointer;
+  }
+
+  .text-field {
+    border-radius: 1rem;
+    width: 100%;
+    border: solid 1px;
+  }
+
+  .field > input {
+    height: 4vh;
+  }
+}
+
+/*for tablets*/
+@media only screen and (min-width: 600px) and (max-width: 992px) {
+  body {
+    margin: 0px 0px;
+    font-family: helvetica;
+  }
+
+  .content-wrapper {
+    display: grid;
+    grid-template-columns: auto 600px auto;
+  }
+  header {
+    grid-column-start: 2;
+    grid-column-end: 2;
+  }
+  footer {
+    height: 50px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    background: #efeffa;
+    bottom: 0;
+    width: 100%;
+  }
+  .left-nav {
+    float: left;
+  }
+  .right-nav {
+    float: right;
+  }
+  .gapfill1 {
+    grid-column-start: 1;
+    grid-column-end: 1;
+  }
+  .gapfill2 {
+    grid-column-start: 3;
+    grid-column-end: 3;
+  }
+  .content-wrapper > h2 {
+    grid-column-start: 2;
+    grid-column-end: 2;
+    font-size: 400%;
+  }
+  .fields {
+    margin-top: 0;
+    grid-column-start: 2;
+    grid-column-end: 2;
+  }
+  .field {
+    margin: 2vh 0px;
+  }
+  .gapfill1,
+  .gapfill2,
+  header {
+    background-color: #efeffa;
+    padding: 20px 0px;
+  }
+
+  .tech-blog-link,
+  .tech-blog-link:visited {
+    text-decoration: none;
+    border: 1px solid #6d64ff;
+    border-radius: 30px;
+    padding: 6px 6px;
+    margin: auto;
+    background-image: linear-gradient(to right, #6d64ff, #313042, #cf1512);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+  }
+  .create-btn,
+  .create-btn:visited {
+    text-decoration: none;
+    grid-column-start: 2;
+    grid-column-end: 2;
+    text-decoration: none;
+    border: 3px solid #6d64ff;
+    border-radius: 15px;
+    padding: 15px 10px;
+    text-align: center;
+    color: white;
+    background-color: #313042;
+    margin-bottom: 2vh;
+  }
+  .create-btn:hover {
+    box-shadow: 5px 5px #6d64ff;
+  }
+
+  .text-field {
+    border-radius: 1rem;
+    width: 100%;
+    border: solid 1px;
+  }
+
+  .field > input {
+    height: 4vh;
+  }
+}
+
+/*for phones*/
+@media only screen and (min-width: 100px) and (max-width: 600px) {
+  body {
+    margin: 0px 0px;
+    font-family: helvetica;
+  }
+
+  .content-wrapper {
+    display: grid;
+    grid-template-columns: auto 350px auto;
+  }
+  header {
+    grid-column-start: 2;
+    grid-column-end: 2;
+  }
+  footer {
+    height: 50px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    background: #efeffa;
+    bottom: 0;
+    width: 100%;
+  }
+  .left-nav {
+    float: left;
+  }
+  .right-nav {
+    float: right;
+  }
+  .gapfill1 {
+    grid-column-start: 1;
+    grid-column-end: 1;
+  }
+  .gapfill2 {
+    grid-column-start: 3;
+    grid-column-end: 3;
+  }
+  .content-wrapper > h2 {
+    grid-column-start: 2;
+    grid-column-end: 2;
+    font-size: 400%;
+  }
+  .fields {
+    margin-top: 0;
+    grid-column-start: 2;
+    grid-column-end: 2;
+  }
+  .field {
+    margin: 2vh 0px;
+  }
+  .gapfill1,
+  .gapfill2,
+  header {
+    background-color: #efeffa;
+    padding: 20px 0px;
+  }
+
+  .tech-blog-link,
+  .tech-blog-link:visited {
+    text-decoration: none;
+    border: 1px solid #6d64ff;
+    border-radius: 30px;
+    padding: 6px 6px;
+    margin: auto;
+    background-image: linear-gradient(to right, #6d64ff, #313042, #cf1512);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+  }
+  .create-btn,
+  .create-btn:visited {
+    text-decoration: none;
+    grid-column-start: 2;
+    grid-column-end: 2;
+    text-decoration: none;
+    border: 3px solid #6d64ff;
+    border-radius: 15px;
+    padding: 15px 10px;
+    text-align: center;
+    color: white;
+    background-color: #313042;
+    margin-bottom: 2vh;
+  }
+  .create-btn:hover {
+    box-shadow: 5px 5px #6d64ff;
+  }
+
+  .text-field {
+    border-radius: 1rem;
+    width: 100%;
+    border: solid 1px;
+  }
+
+  .field > input {
+    height: 4vh;
+  }
+}

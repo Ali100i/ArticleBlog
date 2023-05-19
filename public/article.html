@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="articleStyle.css" />
+    <title>article</title>
+  </head>
+
+  <body>
+    <div class="content-wrapper">
+      <div class="gapfill1"></div>
+      <header>
+        <div class="left-nav">
+          <a class="tech-blog-link" href="index.html">Tech Blog</a>
+        </div>
+        <div class="right-nav">
+          <select id="language2" onchange="setLanguage2()">
+            <option value="English">English</option>
+            <option value="Arabic">Arabic</option>
+          </select>
+        </div>
+      </header>
+      <div class="gapfill2"></div>
+
+      <div class="introduction">
+        <h1>HTML Introduction</h1>
+        <h5>Written by: Admin</h5>
+        <h3>HTML is the standard markup language for creating Web pages.</h3>
+      </div>
+
+      <div class="section">
+        <h1>What is HTML?</h1>
+        <ul>
+          <li>HTML stands for Hyper Text Markup Language</li>
+          <li>HTML is the standard markup language for creating Web pages</li>
+          <li>HTML describes the structure of a Web page</li>
+          <li>HTML consists of a series of elements</li>
+          <li>HTML elements tell the browser how to display the content</li>
+          <li>
+            HTML elements label pieces of content such as "this is a heading",
+            "this is a paragraph", "this is a link", etc.
+          </li>
+        </ul>
+        <hr />
+      </div>
+
+      <div class="section">
+        <h1>What is an HTML Element?</h1>
+        <dl>
+          <dt>
+            An HTML element is defined by a start tag, some content, and an end
+            tag:
+          </dt>
+          <br />
+          <dd>&lt;tagname&gt; Content goes here... &lt;/tagname&gt;</dd>
+          <br />
+          <dt>
+            The HTML element is everything from the start tag to the end tag:
+          </dt>
+          <br />
+          <dd>&lt;h1&gt; My First Heading &lt;/h1&gt;</dd>
+          <br />
+          <dd>&lt;p&gt; My first paragraph. &lt;/p&gt;</dd>
+        </dl>
+
+        <table>
+          <tr>
+            <th>Start tag</th>
+            <th>Element tag</th>
+            <th>End tag</th>
+          </tr>
+          <tr>
+            <td>&lt;h1&gt;</td>
+            <td>My First Heading</td>
+            <td>&lt;/h1&gt;</td>
+          </tr>
+          <tr>
+            <td>&lt;p&gt;</td>
+            <td>My first paragraph</td>
+            <td>&lt;/p&gt;</td>
+          </tr>
+          <tr>
+            <td>&lt;br&gt;</td>
+            <td><i>none</i></td>
+            <td><i>none</i></td>
+          </tr>
+        </table>
+
+        <p>
+          <strong>Note: </strong>Some HTML elements have no content (like the
+          &lt;br&gt; element). These elements are called empty elements. Empty
+          elements do not have an end tag!
+        </p>
+        <hr />
+      </div>
+    </div>
+    <a class="like-icon" onclick="likeArticle()">
+      <img src="img/like-plus.png" alt="like icon" />
+      <p class="like-counter">0</p>
+    </a>
+    <footer>
+      <div class="copyright">
+        &copy; The
+        <a class="tech-blog-link" href="index.html" onclick="loadIndex()"
+          >Tech Blog</a
+        >
+        2023 created by 222-SWE-363 Student
+      </div>
+    </footer>
+    <script src="frontendJS.js"></script>
+  </body>
+</html>

@@ -1,0 +1,372 @@
+/*for laptops*/
+@media only screen and (min-width: 992px) {
+  body {
+    font-family: helvetica;
+    margin: 0;
+  }
+  .content-wrapper {
+    display: grid;
+    grid-template-columns: auto 700px auto;
+  }
+  header {
+    grid-column-start: 2;
+    grid-column-end: 2;
+  }
+  .gapfill1 {
+    grid-column-start: 1;
+    grid-column-end: 1;
+  }
+  .gapfill2 {
+    grid-column-start: 3;
+    grid-column-end: 3;
+  }
+
+  .left-nav {
+    float: left;
+  }
+  .right-nav {
+    float: right;
+  }
+
+  .introduction {
+    grid-column-start: 2;
+    grid-column-end: 2;
+  }
+  .section {
+    grid-column-start: 2;
+    grid-column-end: 2;
+  }
+  footer {
+    grid-column-start: 2;
+    grid-column-end: 2;
+    background-color: #efeffa;
+    height: 50px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+  }
+
+  .gapfill1,
+  .gapfill2,
+  header {
+    background-color: #efeffa;
+    padding: 20px 0px;
+  }
+
+  .tech-blog-link,
+  .tech-blog-link:visited {
+    text-decoration: none;
+    border: 1px solid #6d64ff;
+    border-radius: 30px;
+    padding: 6px 6px;
+    background-image: linear-gradient(to right, #6d64ff, #313042, #cf1512);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+  }
+  .introduction > h1 {
+    font-size: 400%;
+  }
+  .introduction > h5 {
+    width: fit-content;
+    background-color: #efeffa;
+    padding: 5px 10px;
+  }
+  .introduction > h3 {
+    font-size: 90%;
+    color: #6d64ff;
+  }
+
+  .section > h1 {
+    font-size: 150%;
+  }
+
+  table {
+    border-collapse: collapse;
+  }
+
+  table,
+  tr,
+  td,
+  th {
+    border: 1px solid rgb(196, 196, 196);
+  }
+
+  th {
+    background-color: rgb(232, 232, 232);
+  }
+  .like-icon,
+  .like-icon:visited {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    width: fit-content;
+    border: 3px solid #6d64ff;
+    background-color: #313042;
+    border-radius: 1rem;
+    padding: 10px 20px;
+    margin: 1rem 1rem;
+    color: white;
+    text-align: right;
+    text-decoration: none;
+  }
+  .like-icon > img {
+    width: 70px;
+  }
+  .like-icon > p {
+    margin: 0;
+  }
+  .like-icon:hover {
+    box-shadow: 5px 5px #6d64ff;
+    cursor: pointer;
+  }
+}
+/*for tablets*/
+@media only screen and (min-width: 600px) and (max-width: 992px) {
+  body {
+    font-family: helvetica;
+    margin: 0;
+  }
+  .content-wrapper {
+    display: grid;
+    grid-template-columns: auto 600px auto;
+  }
+  header {
+    grid-column-start: 2;
+    grid-column-end: 2;
+  }
+  .gapfill1 {
+    grid-column-start: 1;
+    grid-column-end: 1;
+  }
+  .gapfill2 {
+    grid-column-start: 3;
+    grid-column-end: 3;
+  }
+
+  .left-nav {
+    float: left;
+  }
+  .right-nav {
+    float: right;
+  }
+
+  .introduction {
+    grid-column-start: 2;
+    grid-column-end: 2;
+  }
+  .section {
+    grid-column-start: 2;
+    grid-column-end: 2;
+  }
+  footer {
+    grid-column-start: 2;
+    grid-column-end: 2;
+    background-color: #efeffa;
+    height: 50px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+  }
+
+  .gapfill1,
+  .gapfill2,
+  header {
+    background-color: #efeffa;
+    padding: 20px 0px;
+  }
+
+  .tech-blog-link,
+  .tech-blog-link:visited {
+    text-decoration: none;
+    border: 1px solid #6d64ff;
+    border-radius: 30px;
+    padding: 6px 6px;
+    background-image: linear-gradient(to right, #6d64ff, #313042, #cf1512);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+  }
+  .introduction > h1 {
+    font-size: 400%;
+  }
+  .introduction > h5 {
+    width: fit-content;
+    background-color: #efeffa;
+    padding: 5px 10px;
+  }
+  .introduction > h3 {
+    font-size: 90%;
+    color: #6d64ff;
+  }
+
+  .section > h1 {
+    font-size: 150%;
+  }
+
+  table {
+    border-collapse: collapse;
+  }
+
+  table,
+  tr,
+  td,
+  th {
+    border: 1px solid rgb(196, 196, 196);
+  }
+
+  th {
+    background-color: rgb(232, 232, 232);
+  }
+
+  .like-icon,
+  .like-icon:visited {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    width: fit-content;
+    border: 3px solid #6d64ff;
+    background-color: #313042;
+    border-radius: 1rem;
+    padding: 10px 20px;
+    margin: 1rem 1rem;
+    color: white;
+    text-align: right;
+    text-decoration: none;
+  }
+  .like-icon > img {
+    width: 70px;
+  }
+  .like-icon > p {
+    margin: 0;
+  }
+  .like-icon:hover {
+    box-shadow: 5px 5px #6d64ff;
+    cursor: pointer;
+  }
+}
+
+/*for phones*/
+@media only screen and (min-width: 100px) and (max-width: 600px) {
+  body {
+    font-family: helvetica;
+    margin: 0;
+  }
+  .content-wrapper {
+    display: grid;
+    grid-template-columns: auto 350px auto;
+  }
+  header {
+    grid-column-start: 2;
+    grid-column-end: 2;
+  }
+  .gapfill1 {
+    grid-column-start: 1;
+    grid-column-end: 1;
+  }
+  .gapfill2 {
+    grid-column-start: 3;
+    grid-column-end: 3;
+  }
+
+  .left-nav {
+    float: left;
+  }
+  .right-nav {
+    float: right;
+  }
+
+  .introduction {
+    grid-column-start: 2;
+    grid-column-end: 2;
+  }
+  .section {
+    grid-column-start: 2;
+    grid-column-end: 2;
+  }
+  footer {
+    grid-column-start: 2;
+    grid-column-end: 2;
+    background-color: #efeffa;
+    height: 50px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+  }
+
+  .gapfill1,
+  .gapfill2,
+  header {
+    background-color: #efeffa;
+    padding: 20px 0px;
+  }
+
+  .tech-blog-link,
+  .tech-blog-link:visited {
+    text-decoration: none;
+    border: 1px solid #6d64ff;
+    border-radius: 30px;
+    padding: 6px 6px;
+    background-image: linear-gradient(to right, #6d64ff, #313042, #cf1512);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+  }
+  .introduction > h1 {
+    font-size: 400%;
+  }
+  .introduction > h5 {
+    width: fit-content;
+    background-color: #efeffa;
+    padding: 5px 10px;
+  }
+  .introduction > h3 {
+    font-size: 90%;
+    color: #6d64ff;
+  }
+
+  .section > h1 {
+    font-size: 150%;
+  }
+
+  table {
+    border-collapse: collapse;
+  }
+
+  table,
+  tr,
+  td,
+  th {
+    border: 1px solid rgb(196, 196, 196);
+  }
+
+  th {
+    background-color: rgb(232, 232, 232);
+  }
+
+  .like-icon,
+  .like-icon:visited {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    width: fit-content;
+    border: 3px solid #6d64ff;
+    background-color: #313042;
+    border-radius: 1rem;
+    padding: 10px 20px;
+    margin: 1rem 1rem;
+    color: white;
+    text-align: right;
+    text-decoration: none;
+  }
+  .like-icon > img {
+    width: 70px;
+  }
+  .like-icon > p {
+    margin: 0;
+  }
+  .like-icon:hover {
+    box-shadow: 5px 5px #6d64ff;
+    cursor: pointer;
+  }
+}

@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Articles</title>
+  </head>
+  <body>
+    <div class="section-wrapper">
+      <h1 class="articles-header">All Technical Articles</h1>
+      <div class="Section" id="articles-container"></div>
+    </div>
+
+    <script>
+      const articles = [
+        {
+          author: "Admin",
+          title: "HTML Introduction",
+          content:
+            "HTML is the standard markup language for creating Web pages.",
+          id: 1,
+        },
+        {
+          author: "Ali",
+          title: "Creating hyperlinks",
+          content:
+            "Hyperlinks are really important — they are what makes the Web a web. This article shows the syntax required to make a link, and discusses link best practices.",
+          id: 2,
+        },
+        {
+          author: "Hassan",
+          title: "HTML tables",
+          content:
+            "A very common task in HTML is structuring tabular data, and it has a number of elements and attributes for just this purpose. Coupled with a little CSS for styling, HTML makes it easy to display tables of information on the web such as your school lesson plan, the timetable at your local swimming pool, or statistics about your favorite dinosaurs or football team. This module takes you through all you need to know about structuring tabular data using HTML.",
+          id: 3,
+        },
+      ];
+
+      const container = document.getElementById("articles-container");
+
+      articles.forEach((article) => {
+        const section = document.createElement("div");
+        section.className = "Section";
+
+        const sectionIcon = document.createElement("div");
+        sectionIcon.className = "section-icon";
+
+        const devIcon = document.createElement("img");
+        devIcon.className = "dev-icon";
+        devIcon.src = "img/editor-icons-2.png";
+        devIcon.alt = "developer programming";
+
+        const name = document.createElement("p");
+        name.className = "name";
+        name.textContent = article.author;
+
+        const heartIcon = document.createElement("img");
+        heartIcon.className = "heart-icon";
+        heartIcon.src = "img/heart-suit.png";
+        heartIcon.alt = "heart";
+
+        const heartCounter = document.createElement("p");
+        heartCounter.className = "heart-counter";
+        heartCounter.textContent = 0;
+
+        sectionIcon.appendChild(devIcon);
+        sectionIcon.appendChild(name);
+        sectionIcon.appendChild(heartIcon);
+        sectionIcon.appendChild(heartCounter);
+
+        const sectionContent = document.createElement("div");
+        sectionContent.className = "section-content";
+
+        const title = document.createElement("h3");
+        title.textContent = article.title;
+
+        const content = document.createElement("p");
+        content.textContent = article.content;
+
+        const btnWrapper = document.createElement("div");
+        btnWrapper.className = "btn-wrapper";
+
+        const readBtn = document.createElement("a");
+        readBtn.className = "read-btn";
+        readBtn.href = `/article/${article.id}`;
+        readBtn.textContent = "Read Now";
+
+        const editBtn = document.createElement("button");
+        editBtn.className = "edit-btn";
+        editBtn.textContent = "Edit";
+
+        const deleteBtn = document.createElement("button");
+        deleteBtn.className = "delete-btn";
+        deleteBtn.onclick = deleteArticle;
+        deleteBtn.textContent = "Delete";
+
+        btnWrapper.appendChild(readBtn);
+        btnWrapper.appendChild(editBtn);
+        btnWrapper.appendChild(deleteBtn);
+
+        sectionContent.appendChild(title);
+        sectionContent.appendChild(content);
+        sectionContent.appendChild(btnWrapper);
+
+        section.appendChild(sectionIcon);
+        section.appendChild(sectionContent);
+
+        container.appendChild(section);
+      });
+    </script>
+  </body>
+</html>

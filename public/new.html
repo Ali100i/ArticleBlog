@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="newArticleStyle.css" />
+    <link
+      href="node_modules/froala-editor/css/froala_editor.pkgd.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script
+      type="text/javascript"
+      src="node_modules/froala-editor/js/froala_editor.pkgd.min.js"
+    ></script>
+    <title>new</title>
+  </head>
+
+  <body>
+    <div class="content-wrapper">
+      <div class="gapfill1"></div>
+      <header>
+        <div class="left-nav">
+          <a class="tech-blog-link" href="index.html">Tech Blog</a>
+        </div>
+        <div class="right-nav">
+          <select>
+            <option>English</option>
+            <option>Arabic</option>
+          </select>
+        </div>
+      </header>
+      <div class="gapfill2"></div>
+
+      <h2>Create an article</h2>
+      <form action="index.html">
+        <div class="field">
+          <label>Title</label>
+          <input class="text-field" type="text" name="title" required />
+        </div>
+
+        <div class="field">
+          <label>Author</label>
+          <input class="text-field" type="text" name="author" required />
+        </div>
+
+        <div class="field">
+          <label>Description</label>
+          <textarea
+            class="text-field"
+            name="description"
+            rows="3"
+            required
+          ></textarea>
+        </div>
+
+        <div class="field">
+          <label>Content</label>
+          <textarea
+            id="content"
+            class="text-field"
+            name=""
+            rows="10"
+          ></textarea>
+        </div>
+
+        <div class="field">
+          <label>Arabic Content</label>
+          <textarea
+            id="arabic-content"
+            class="text-field"
+            name="arabic-content"
+            rows="10"
+          ></textarea>
+        </div>
+        <input type="submit" class="create-btn" />
+      </form>
+    </div>
+    <footer>
+      <div class="copyright">
+        &copy; The
+        <a class="tech-blog-link">Tech Blog</a> 2023 created by 222-SWE-363
+        Student
+      </div>
+    </footer>
+
+    <script src="frontendJS.js"></script>
+  </body>
+</html>

@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="indexStyle.css" />
+    <link
+      href="node_modules/froala-editor/css/froala_editor.pkgd.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script
+      type="text/javascript"
+      src="node_modules/froala-editor/js/froala_editor.pkgd.min.js"
+    ></script>
+    <title>index</title>
+  </head>
+
+  <body>
+    <div class="content-wrapper">
+      <div class="gapfill1"></div>
+      <header>
+        <div class="left-nav">
+          <a class="tech-blog-link" href="article.html">Tech Blog</a>
+        </div>
+        <div class="right-nav">
+          <select id="language" onchange="setLanguage()">
+            <option value="English">English</option>
+            <option value="Arabic">Arabic</option>
+          </select>
+        </div>
+      </header>
+      <div class="gapfill2"></div>
+
+      <div class="welcome-banner">
+        <div id="opening-phrase1">
+          <p>
+            <strong
+              >Welcome to The
+              <a class="tech-blog-link" href="article.html">Tech Blog</a
+              >...</strong
+            >
+          </p>
+        </div>
+        <p id="opening-phrase2">
+          <strong
+            >The place to share your knowledge and make the world better</strong
+          >
+        </p>
+        <a id="new-article-btn" href="new.html">Create an Article</a>
+      </div>
+
+      <div class="section-wrapper">
+        <h1 class="articles-header">All Technical Articles</h1>
+
+        <div class="Section">
+          <div class="section-icon">
+            <img
+              class="dev-icon"
+              src="img/editor-icons-2.png"
+              alt="developer programming"
+            />
+            <p class="name">Admin</p>
+            <img class="heart-icon" src="img/heart-suit.png" alt="heart" />
+            <p class="heart-counter">0</p>
+          </div>
+          <div class="section-content">
+            <h3>HTML Introduction</h3>
+            <p>HTML is the standard markup language for creating Web pages.</p>
+            <div class="btn-wrapper">
+              <a class="read-btn" href="article.html">Read Now</a>
+              <button class="edit-btn">Edit</button>
+              <button class="delete-btn" onclick="deleteArticle()">
+                Delete
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="Section">
+          <div class="section-icon">
+            <img
+              class="dev-icon"
+              src="img/editor-icons-2.png"
+              alt="developer programming"
+            />
+            <p class="name">Ali</p>
+            <img class="heart-icon" src="img/heart-suit.png" alt="heart" />
+            <p class="heart-counter">0</p>
+          </div>
+          <div class="section-content">
+            <h3>Creating hyperlinks</h3>
+            <p>
+              Hyperlinks are really important — they are what makes the Web a
+              web. This article shows the syntax required to make a link, and
+              discusses link best practices.
+            </p>
+            <div class="btn-wrapper">
+              <a class="read-btn" href="article.html">Read Now</a>
+              <button class="edit-btn">Edit</button>
+              <button class="delete-btn" onclick="deleteArticle()">
+                Delete
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="Section">
+          <div class="section-icon">
+            <img
+              class="dev-icon"
+              src="img/editor-icons-2.png"
+              alt="developer programming"
+            />
+            <p class="name">Hassan</p>
+            <img class="heart-icon" src="img/heart-suit.png" alt="heart" />
+            <p class="heart-counter">0</p>
+          </div>
+          <div class="section-content">
+            <h3>HTML tables</h3>
+            <p>
+              A very common task in HTML is structuring tabular data, and it has
+              a number of elements and attributes for just this purpose. Coupled
+              with a little CSS for styling, HTML makes it easy to display
+              tables of information on the web such as your school lesson plan,
+              the timetable at your local swimming pool, or statistics about
+              your favorite dinosaurs or football team. This module takes you
+              through all you need to know about structuring tabular data using
+              HTML.
+            </p>
+            <div class="btn-wrapper">
+              <a class="read-btn" href="article.html">Read Now</a>
+              <button class="edit-btn">Edit</button>
+              <button class="delete-btn" onclick="deleteArticle()">
+                Delete
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer>
+      <div class="copyright">
+        &copy; The
+        <a class="tech-blog-link" href="article.html">Tech Blog</a> 2023 created
+        by 222-SWE-363 Student
+      </div>
+    </footer>
+
+    <script src="frontendJS.js"></script>
+  </body>
+</html>
